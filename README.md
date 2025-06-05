@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # uitest
 
 A new Flutter project.
@@ -15,6 +16,9 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# Yt_teacher.dart
+>>>>>>> 2b272a0f193f14c9774b93cd3af1351c6bbb1902
 =======
 # Yt_teacher.dart
 >>>>>>> 2b272a0f193f14c9774b93cd3af1351c6bbb1902
