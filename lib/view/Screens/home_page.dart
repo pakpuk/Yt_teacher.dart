@@ -14,11 +14,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text('Home Page'),
       ),
-      body: Center(
-        child: Text(
-          'Welcome to the Home Page!',
-        ),
-      ),
-    );
+      body: column(),
+    ); 
   }
 }
