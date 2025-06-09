@@ -9,13 +9,15 @@ class ButtonWidget extends StatelessWidget {
   final BorderRadius? borderRadius;
   final double? width;
   final double? height;
+  final Color? backgroundColor;
   ButtonWidget(
       {super.key,
       this.title,
       required this.onTap,
       this.width,
       this.height,
-      this.borderRadius});
+      this.borderRadius,
+      this.backgroundColor});
 
   @override
   Widget build(BuildContext context) {
@@ -25,13 +27,13 @@ class ButtonWidget extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onTap,
         style: ElevatedButton.styleFrom(
-          backgroundColor: ColorManager.primary,
+          backgroundColor: backgroundColor ?? ColorManager.primary,
           shape: RoundedRectangleBorder(
             borderRadius: borderRadius ?? BorderRadius.circular(16.r),
           ),
         ),
         child: Text(
-          title ?? Constaints.Getstartedbuton,
+          title ?? Constaints.getstartedbuton,
           style: TextStyle(fontSize: 18.sp, color: Colors.white),
         ),
       ),
