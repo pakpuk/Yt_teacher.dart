@@ -18,7 +18,8 @@ class loginScreen extends StatefulWidget {
 class _loginScreenState extends State<loginScreen> {
   final formkey = GlobalKey<FormState>();
   bool isobscureText = true;
-
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,10 +45,12 @@ class _loginScreenState extends State<loginScreen> {
                 ),
                 Form(
                     key: formkey,
+                    autovalidateMode: AutovalidateMode.onUserInteraction,
                     child: Column(
                       children: [
                         TextFielWidget(
                           hintText: Constaints.emailhint,
+                          controller: emailController,
                         ),
                         SizedBox(
                           height: 16.h,
@@ -64,6 +67,7 @@ class _loginScreenState extends State<loginScreen> {
                               color: ColorManager.greycolor,
                             ),
                           ),
+                          controller: passwordController,
                         ),
                         SizedBox(
                           height: 8.h,
