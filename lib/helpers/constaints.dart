@@ -38,4 +38,5 @@ class Constaints {
   static const String profile = 'Profile';
   static const String changeLanguage = 'Change Language';
   static const String logout = 'Logout';
+  static const String history = 'History';
 }

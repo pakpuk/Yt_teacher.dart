@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:uitest/theme/text_style.dart';
 
 class PersonalAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
@@ -16,21 +17,13 @@ class PersonalAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       backgroundColor: Colors.white,
       elevation: 0,
-      title: Text(
-        title,
-        style: TextStyle(
-          color: Colors.black,
-          fontSize: 20.sp,
-          fontWeight: FontWeight.bold,
-        ),
-      ),
+      title: Text(title, style: TextStyles.f24tdark),
       actions: [
         IconButton(
           onPressed: onProfileTap,
           icon: CircleAvatar(
             radius: 18.r,
-            backgroundImage: AssetImage(
-                'assets/images/profile.png'), // بدّلها لاحقًا بصورة المستخدم
+            backgroundImage: AssetImage('assets/images/profile.png'),
           ),
         ),
       ],
