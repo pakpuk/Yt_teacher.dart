@@ -10,7 +10,7 @@ class TextStyles {
     color: ColorManager.secondaryDark,
   );
 
-  static TextSyle f24tdark = TextStyle(
+  static TextStyle f24tdark = TextStyle(
     fontSize: 24.sp,
     fontWeight: FontWeightHelper.bold,
     color: ColorManager.titleColor,
